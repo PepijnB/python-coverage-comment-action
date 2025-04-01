@@ -313,7 +313,8 @@ jobs:
   with:
     GITHUB_TOKEN: ${{ github.token }}
 
-    # Change this in case you use GitHub Entreprise with a different API endpoint
+    # Change this in case you use GitHub Entreprise with a different API endpoint,
+    # with format https://<hostname>/api/v3.
     GITHUB_BASE_URL: https://api.github.com
 
     # Only necessary in the "workflow_run" workflow.
@@ -599,7 +600,8 @@ to use the svg badge directly, and not the `shields.io` URL.
 
 ## Github Enterprise (GHE) Support
 
-This action should be compatible with GitHub Enterprise. Just make sure to set the `GITHUB_BASE_URL` input to your GHE URL.
+This action should be compatible with GitHub Enterprise. Just make sure to set the `GITHUB_BASE_URL` input to your GHE URL, 
+with format `https://<hostname>/api/v3`.
 
 ## Upgrading from v2 to v3
 
