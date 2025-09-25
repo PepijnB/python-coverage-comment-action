@@ -33,6 +33,10 @@ def main():
         log.info("Starting action")
         config = settings.Config.from_environ(environ=os.environ)
 
+        log.debug("====================================================")
+        log.debug(f"Loaded config: {config}")
+        log.debug("====================================================")
+
         git = subprocess.Git()
 
         with (
